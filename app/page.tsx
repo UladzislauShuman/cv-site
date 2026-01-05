@@ -3,6 +3,7 @@
 import { Header } from "@/components/Header"
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
+import avatarImage from "@/assets/my-photo.jpg";
 
 export default function Home() {
     const { t } = useLanguage();
@@ -16,11 +17,12 @@ export default function Home() {
                 <div className="relative w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden mb-6 border-4
                     border-gray-200 dark:border-gray-800 shadow-xl">
                     <Image
-                        src="/my-photo.jpg"
+                        src={avatarImage}
                         alt="Avatar"
                         fill
                         className="object-cover"
                         priority
+                        placeholder="blur"
                     />
                 </div>
 
