@@ -26,7 +26,7 @@ export function LanguageProvider({ children }: {children: React.ReactNode}) {
     }, []);
 
     const setLanguage = (lang: Language) => {
-        setLanguage(lang);
+        setLanguageState(lang);
     };
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
