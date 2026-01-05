@@ -21,6 +21,10 @@ export const RESUME_DATA = {
             projects: "Projects",
             contact: "Contact",
         },
+        ui: {
+            toggleTheme: "Toggle Theme",
+            switchLanguage: "Switch Language",
+        },
         buttons: {
             resume: "Download CV",
             contact: "Contact Me",
@@ -73,6 +77,10 @@ export const RESUME_DATA = {
             experience: "Опыт",
             projects: "Проекты",
             contact: "Контакты",
+        },
+        ui: {
+            toggleTheme: "Переключить тему",
+            switchLanguage: "Сменить язык",
         },
         buttons: {
             resume: "Скачать резюме",
