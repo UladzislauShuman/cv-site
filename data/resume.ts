@@ -1,3 +1,5 @@
+import { Github, Linkedin, Mail, Send, Phone } from "lucide-react";
+
 export type Language = "en" | "ru";
 
 export const RESUME_DATA = {
@@ -6,56 +8,61 @@ export const RESUME_DATA = {
             name: "Uladzislau Shuman",
             role: "Backend Software Engineer (Java/Python)",
             location: "Minsk, Belarus",
-            about: "Backend Software Engineer focused on Java (Spring Ecosystem) and Python (AI/LLM integrations). Experience with Microservices, Docker, Kafka, and Cloud services. Passionate about Clean Architecture and building scalable systems.",
-            availability: "Open for opportunities",
+            about: "Software Engineer with a focus on Backend development. Experienced in building microservices with Java (Spring Ecosystem) and creating AI-driven solutions using Python (LLM/RAG). Also have a background in Android development (Kotlin).",
         },
-        links: {
-            github: "https://github.com/UladzislauShuman",
-            linkedin: "https://www.linkedin.com/in/uladzislau-shuman-1b66b1321/",
-            telegram: "https://t.me/ushale1",
+        contact: {
             email: "sumanvlad36@gmail.com",
+            telegram: "https://t.me/ushale1",
+            linkedin: "https://www.linkedin.com/in/uladzislau-shuman-1b66b1321/",
+            github: "https://github.com/UladzislauShuman",
+            phones: [
+                "+375 (29) 377-37-38",
+                "+48-504-540-805"
+            ]
         },
-        nav: {
+        sectionTitles: {
             about: "About",
+            stack: "Tech Stack",
             experience: "Experience",
             projects: "Projects",
-            contact: "Contact",
         },
-        ui: {
-            toggleTheme: "Toggle Theme",
-            switchLanguage: "Switch Language",
-        },
-        buttons: {
-            resume: "Download CV",
-            contact: "Contact Me",
-        },
+
+        skills: [
+            {
+                category: "Backend & Java",
+                items: ["Java Core", "Spring Boot", "Spring Cloud", "Hibernate", "JPA", "Maven/Gradle"]
+            },
+            {
+                category: "AI & Python",
+                items: ["Python", "Aiogram", "LangChain", "RAG", "LLM Integration", "ChromaDB"]
+            },
+            {
+                category: "Infrastructure & Tools",
+                items: ["Docker", "Kubernetes", "Kafka", "RabbitMQ", "Redis", "PostgreSQL", "Git"]
+            },
+            {
+                category: "Mobile",
+                items: ["Kotlin", "Android SDK", "Jetpack Compose", "Clean Architecture", "MVVM"]
+            },
+            {
+                category: "Core Concepts",
+                items: ["OOP & SOLID", "Design Patterns", "Algorithms & Data Structures", "Microservices", "CI/CD"]
+            }
+        ],
         experience: [
             {
                 company: "IFortex",
                 role: "Java Backend Developer Intern",
                 date: "July 2025 – Aug 2025",
-                description: "Designed Emergency Service system. Merged 3 services (User, Billing, Notification) via Spring Cloud Gateway. Implemented 2FA (Email/Google Auth), JWT validation, and RBAC. Integrated Stripe for payments and Azure Blob Storage for doc validation.",
-                tags: ["Java", "Spring Cloud", "Microservices", "Docker", "Redis", "RabbitMQ"]
+                description: "Designed Emergency Service system. Merged 3 services (User, Billing, Notification) via Spring Cloud Gateway. Implemented 2FA, JWT validation, and RBAC. Integrated Stripe and Azure Blob Storage.",
             },
             {
                 company: "FileFolio (Team Project)",
                 role: "Backend Developer",
                 date: "Sep 2025 – Dec 2025",
-                description: "Developed a Telegram Mini App acting as a cloud storage. Built Python bot (Aiogram), deployed on Google Cloud, connected to Supabase (Postgres). Optimized local deployment.",
-                tags: ["Python", "Aiogram", "Google Cloud", "Supabase"]
+                description: "Developed a Telegram Mini App acting as cloud storage. Built Telegram bot (Aiogram), deployed on Google Cloud, connected to Supabase (Postgres).",
             }
         ],
-        education: [
-            {
-                school: "Belarusian State University (FPMI)",
-                degree: "Computer Science / System Analysis",
-                date: "2023 – 2027",
-            }
-        ],
-        skills: [
-            "Java Core", "Spring Boot", "Spring Cloud", "Python", "SQL",
-            "PostgreSQL", "Redis", "Kafka", "Docker", "Git", "RAG/LLM"
-        ]
     },
 
     ru: {
@@ -63,55 +70,59 @@ export const RESUME_DATA = {
             name: "Владислав Шуман",
             role: "Backend Software Engineer (Java/Python)",
             location: "Минск, Беларусь",
-            about: "Backend разработчик (Java/Spring Framework). Опыт создания Telegram ботов на Python, интеграции LLM и RAG архитектуры. Использую микросервисный подход, Docker, Kafka. Интересуюсь архитектурой приложений и чистым кодом.",
-            availability: "Открыт к предложениям",
+            about: "Software Engineer с фокусом на Backend. Опыт разработки микросервисов на Java (Spring) и создания AI-решений на Python (LLM/RAG). Также разрабатывал Android-приложения на Kotlin.",
         },
-        links: {
-            github: "https://github.com/UladzislauShuman",
-            linkedin: "https://www.linkedin.com/in/uladzislau-shuman-1b66b1321/",
-            telegram: "https://t.me/ushale1",
+        contact: {
             email: "sumanvlad36@gmail.com",
+            telegram: "https://t.me/ushale1",
+            linkedin: "https://www.linkedin.com/in/uladzislau-shuman-1b66b1321/",
+            github: "https://github.com/UladzislauShuman",
+            phones: [
+                "+375 (29) 377-37-38",
+                "+48-504-540-805"
+            ]
         },
-        nav: {
+        sectionTitles: {
             about: "Обо мне",
-            experience: "Опыт",
+            stack: "Технологии",
+            experience: "Опыт работы",
             projects: "Проекты",
-            contact: "Контакты",
         },
-        ui: {
-            toggleTheme: "Переключить тему",
-            switchLanguage: "Сменить язык",
-        },
-        buttons: {
-            resume: "Скачать резюме",
-            contact: "Написать мне",
-        },
+        skills: [
+            {
+                category: "Backend & Java",
+                items: ["Java Core", "Spring Boot", "Spring Cloud", "Hibernate", "JPA", "Maven/Gradle"]
+            },
+            {
+                category: "AI & Python",
+                items: ["Python", "Aiogram", "LangChain", "RAG", "LLM Integration", "ChromaDB"]
+            },
+            {
+                category: "Инфраструктура",
+                items: ["Docker", "Kubernetes", "Kafka", "RabbitMQ", "Redis", "PostgreSQL", "Git"]
+            },
+            {
+                category: "Mobile",
+                items: ["Kotlin", "Android SDK", "Jetpack Compose", "Clean Architecture", "MVVM"]
+            },
+            {
+                category: "Фундамент",
+                items: ["OOP & SOLID", "Паттерны проектирования", "Алгоритмы и Структуры данных", "Микросервисы", "CI/CD"]
+            }
+        ],
         experience: [
             {
                 company: "IFortex",
                 role: "Стажер Java Backend Developer",
                 date: "Июль 2025 – Август 2025",
-                description: "Проект Emergency Service. Спроектировал 3 сервиса (User, Billing, Notification) через Spring Cloud Gateway. Реализовал гибридную аутентификацию (2FA), JWT, динамические права доступа. Интегрировал Stripe и Azure Blob Storage. Использовал RabbitMQ и Redis.",
-                tags: ["Java", "Spring Cloud", "Microservices", "Docker", "Redis", "RabbitMQ"]
+                description: "Проект Emergency Service. Спроектировал 3 сервиса через Spring Cloud Gateway. Реализовал 2FA, JWT, RBAC. Интегрировал Stripe и Azure Blob Storage.",
             },
             {
                 company: "FileFolio (Командный проект)",
                 role: "Backend Developer",
                 date: "Сент 2025 – Дек 2025",
-                description: "Telegram Mini App (аналог Google Drive). Сделал бота на Python + Aiogram. Деплой на Google Cloud, база данных Supabase. Оптимизировал запуск системы.",
-                tags: ["Python", "Aiogram", "Google Cloud", "Supabase"]
+                description: "Telegram Mini App (облачное хранилище). Разработал бота на Python + Aiogram. Деплой на Google Cloud, база данных Supabase.",
             }
         ],
-        education: [
-            {
-                school: "БГУ ФПМИ",
-                degree: "Информатика / Системный анализ",
-                date: "2023 – 2027",
-            }
-        ],
-        skills: [
-            "Java Core", "Spring Boot", "Spring Cloud", "Python", "SQL",
-            "PostgreSQL", "Redis", "Kafka", "Docker", "Git", "RAG/LLM"
-        ]
     }
 } as const;
