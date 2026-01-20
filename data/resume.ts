@@ -51,16 +51,20 @@ export const RESUME_DATA = {
         ],
         experience: [
             {
+                id: "ifortex",
                 company: "IFortex",
                 role: "Java Backend Developer Intern",
                 date: "July 2025 – Aug 2025",
                 description: "Designed Emergency Service system. Merged 3 services (User, Billing, Notification) via Spring Cloud Gateway. Implemented 2FA, JWT validation, and RBAC. Integrated Stripe and Azure Blob Storage.",
+                tags: ["Java", "Spring Cloud", "Microservices", "Docker", "Redis", "RabbitMQ"]
             },
             {
+                id: "filefolio",
                 company: "FileFolio (Team Project)",
                 role: "Backend Developer",
                 date: "Sep 2025 – Dec 2025",
-                description: "Developed a Telegram Mini App acting as cloud storage. Built Telegram bot (Aiogram), deployed on Google Cloud, connected to Supabase (Postgres).",
+                description: "Telegram Mini App acting as cloud storage. Built Python bot (Aiogram), deployed on Google Cloud, connected to Supabase (Postgres).",
+                tags: ["Python", "Aiogram", "Google Cloud", "Supabase"]
             }
         ],
     },
@@ -112,16 +116,20 @@ export const RESUME_DATA = {
         ],
         experience: [
             {
+                id: "ifortex",
                 company: "IFortex",
                 role: "Стажер Java Backend Developer",
                 date: "Июль 2025 – Август 2025",
                 description: "Проект Emergency Service. Спроектировал 3 сервиса через Spring Cloud Gateway. Реализовал 2FA, JWT, RBAC. Интегрировал Stripe и Azure Blob Storage.",
+                tags: ["Java", "Spring Cloud", "Microservices", "Docker", "Redis", "RabbitMQ"]
             },
             {
+                id: "filefolio",
                 company: "FileFolio (Командный проект)",
                 role: "Backend Developer",
                 date: "Сент 2025 – Дек 2025",
-                description: "Telegram Mini App (облачное хранилище). Разработал бота на Python + Aiogram. Деплой на Google Cloud, база данных Supabase.",
+                description: "Telegram Mini App (облачное хранилище). Разработал бота на Python(Aiogram). Помогал в деплое на Google Cloud и подключении к бд Supabase.",
+                tags: ["Python", "Aiogram", "Google Cloud", "Supabase"]
             }
         ],
     }

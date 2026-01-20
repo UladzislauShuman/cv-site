@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import avatarImage from "@/assets/my-photo.jpg";
 import { motion } from "framer-motion";
+import {Experience} from "@/components/Experience";
 
 export default function Home() {
     const { t } = useLanguage();
@@ -38,6 +39,7 @@ export default function Home() {
                 </motion.div>
             </section>
             <TechStack />
+            <Experience/>
         </main>
     );
 }
