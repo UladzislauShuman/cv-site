@@ -59,9 +59,12 @@ export function Experience() {
                             ))}
                         </div>
 
-                        <button className="flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                        <Link
+                            href={`/project/${job.id}`}
+                            className="flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors w-fit"
+                        >
                             Read more details <ArrowRight size={16} />
-                        </button>
+                        </Link>
 
                     </motion.div>
                 ))}
